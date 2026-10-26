@@ -1,0 +1,28 @@
+{
+  "name": "rutasur-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Servicios Node.js de RutaSur (simulador, proyector, notificaciones, reprogramacion, monitor SLA, analitica)",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "simulador": "node src/simulator/index.js",
+    "proyector": "node src/proyector/index.js",
+    "notificaciones": "node src/notificaciones/index.js",
+    "reprogramacion": "node src/reprogramacion/index.js",
+    "monitor-sla": "node src/monitor-sla/index.js",
+    "analitica": "node src/analitica/index.js",
+    "analitica-tiempo-hub": "node src/analitica-tiempo-hub/index.js",
+    "init-topics": "node src/tools/init-topics.js",
+    "lag": "node src/tools/lag.js",
+    "dlq": "node src/tools/ver-dlq.js",
+    "reconstruir": "node src/tools/reconstruir.js",
+    "checksum": "node src/tools/checksum.js",
+    "recuento": "node src/tools/recuento.js"
+  },
+  "dependencies": {
+    "kafkajs": "^2.2.4",
+    "mongodb": "^6.10.0"
+  }
+}
